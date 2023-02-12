@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/20d350a682.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="header">
         <div class="container">
@@ -26,7 +28,7 @@
             </nav>
             <div class="header-text">
                 <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span>Muhammad<br>Naeem Raza</span> from Pakistan</h1>
+                <h1>Hi, I'm <span>Muhammad Naeem<br> Raza</span>, <span class="auto-type"></span></h1>
             </div>
         </div>
     </div>
@@ -39,7 +41,9 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit iste, ut iure fugit earum totam illum itaque facilis deserunt laudantium sunt animi sequi expedita aspernatur veniam delectus! Quis, praesentium nam!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit iste, ut iure fugit earum totam
+                        illum itaque facilis deserunt laudantium sunt animi sequi expedita aspernatur veniam delectus!
+                        Quis, praesentium nam!</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -67,11 +71,11 @@
                             <li><span>App Development</span><br>Building Android/IOS apps</li>
                         </ul>
                     </div>
-                </div>         
+                </div>
             </div>
         </div>
     </div>
-<!-- ======================Services================================== -->
+    <!-- ======================Services================================== -->
     <div id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
@@ -79,26 +83,29 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, similique. Qui, ducimus adipisci eum.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, similique. Qui, ducimus
+                        adipisci eum.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
                     <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, similique. Qui, ducimus adipisci eum.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, similique. Qui, ducimus
+                        adipisci eum.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store-ios"></i>
                     <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, similique. Qui, ducimus adipisci eum.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, similique. Qui, ducimus
+                        adipisci eum.</p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
     </div>
 
-<!-- /* =================portfolio========================== */ -->
+    <!-- /* =================portfolio========================== */ -->
 
     <div id="portfolio">
         <div class="container">
@@ -108,7 +115,8 @@
                     <img src="./images/work-1.png" alt="">
                     <div class="layer">
                         <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quas odio hic eligendi!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quas odio hic eligendi!
+                        </p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -116,7 +124,8 @@
                     <img src="./images/work-2.png" alt="">
                     <div class="layer">
                         <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quas odio hic eligendi!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quas odio hic eligendi!
+                        </p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -124,7 +133,8 @@
                     <img src="./images/work-3.png" alt="">
                     <div class="layer">
                         <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quas odio hic eligendi!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quas odio hic eligendi!
+                        </p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -166,54 +176,71 @@
             <p>Copyright © Muhammad Naeem Raza <i class="fa-regular fa-registered"></i> from 2023-2050</p>
         </div>
     </div>
+    <!-- =====================for retyping=================== -->
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+
+        var typed = new Typed(".auto-type", {
+            strings: ["Chatbot Developer","WebApp Developer","Graphic Designer","Freelancer"],
+            typeSpeed: 80,
+            backSpeed: 80,
+            loop: true
+        })
+
+
+    </script>
+
+    <!-- =================about me section javascript for changingn menu=========== -->
     <script>
         let tablinks = document.getElementsByClassName("tab-links");
         let tabcontents = document.getElementsByClassName("tab-contents");
-        
-        function opentab(tabname){
-            for(tablink of tablinks){
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-            for(tabcontent of tabcontents){
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
-
+    <!--=====================For small screen side menu==================  -->
     <script>
 
         var sidemenu = document.getElementById("sidemenu");
 
-        function openmenu(){
+        function openmenu() {
             sidemenu.style.right = "0";
         }
-        function closemenu(){
+        function closemenu() {
             sidemenu.style.right = "-200px";
         }
 
     </script>
+    <!--===================== for submit form==================== -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyBaJcNRUS5whH7WGsSc7yCUYnq12FZJvJBf0oKknXfjzHzxJ_K1dmPwa5omsV9TdQd/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyBaJcNRUS5whH7WGsSc7yCUYnq12FZJvJBf0oKknXfjzHzxJ_K1dmPwa5omsV9TdQd/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message send successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message send successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    </script>
 
 </body>
+
 </html>

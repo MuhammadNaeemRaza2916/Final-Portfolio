@@ -64,6 +64,11 @@ nav ul li a:hover::after{
 }
 .header-text h1 span{
     color: #ff004f;
+    font-size: 60px;
+}
+.header-text h1 .auto-type{
+    color: #fff;
+    font-size: 60px;
 }
     /* <!-- ==============about================== --> */
 #about{
