@@ -334,6 +334,9 @@ nav .fa-solid{
     .header-text h1{
         font-size: 30px;
     }
+    .header-text h1 span{
+        font-size: 30px;
+    }
     nav .fa-solid{
         display: block;
         font-size: 25px;
