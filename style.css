@@ -70,6 +70,7 @@ nav ul li a:hover::after {
     /* flex-wrap: wrap; */
     margin-top: 5%;
     font-size: 30px;
+    /* margin-bottom: 0; */
 }
 
 .imgprofile {
@@ -117,7 +118,7 @@ nav ul li a:hover::after {
 
 
 .header-text h1 {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-size: 60px;
 }
 
@@ -133,7 +134,7 @@ nav ul li a:hover::after {
 
 /* <!-- ==============about================== --> */
 #about {
-    padding: 150px 0;
+    padding: 30px 0;
     color: black;
 }
 
