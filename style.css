@@ -70,7 +70,7 @@ nav ul li a:hover::after {
     /* flex-wrap: wrap; */
     margin-top: 5%;
     font-size: 30px;
-    height:380px;
+    height: 500px;
 }
 
 .imgprofile {
@@ -147,6 +147,7 @@ nav ul li a:hover::after {
 
 .about-col-1 {
     flex-basis: 35%;
+    padding-bottom: 50px;
 }
 
 .about-col-1 img {
@@ -196,11 +197,13 @@ nav ul li a:hover::after {
 .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
+    font-weight:light;
 }
 
 .tab-contents ul li span {
     color: #ff004f;
     font-size: 14px;
+    font-weight: bolder;
 }
 
 .tab-contents {
@@ -596,7 +599,7 @@ nav .fa-solid {
 }
 
 @media(max-width:610px) {
-    
+
     .header-text {
         /* margin-top: 40%; */
         font-size: 26px;
@@ -610,6 +613,7 @@ nav .fa-solid {
         font-size: 35px;
     }
 }
+
 @media(max-width: 500px) {
 
     .header-text {
@@ -628,6 +632,7 @@ nav .fa-solid {
         display: block;
         font-size: 25px;
     }
+
     nav ul {
         background: #ff004f;
         position: fixed;
@@ -754,7 +759,16 @@ nav .fa-solid {
     }
 
     .header-text {
+        font-size: 36px;
         padding-bottom: 10;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    .header-text h1 span {
+        font-size: 45px;
     }
 
     #about {
