@@ -136,6 +136,7 @@ nav ul li a:hover::after {
 /* <!-- ==============about================== --> */
 #about {
     padding: 150px 0;
+    padding-bottom: 50px;
     color: black;
 }
 
@@ -161,6 +162,7 @@ nav ul li a:hover::after {
 }
 
 .sub-title {
+    padding-bottom: 10px;
     font-weight: 600;
     font-size: 60px;
     color: black;
